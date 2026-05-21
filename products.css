@@ -497,6 +497,26 @@ a:hover{
     color: #d17a9e;
 }
 
+/* Katalog Ürün Detayları */
+.product-details {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #ebd2db;
+    text-align: left;
+}
+
+.product-description, .product-ingredients {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #5a4b50;
+    margin-bottom: 8px;
+}
+
+.product-details strong {
+    color: #8c6273;
+    font-weight: 600;
+}
+
 @media (max-width: 720px) {
     header h1{
         font-size:2.3rem;
