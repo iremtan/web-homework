@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="products.css">
 </head>
 <body>
@@ -33,345 +36,568 @@
 
     <h2>Popular Products</h2>
 
+    <p class="catalog-note">This is a product catalog and review site — items are available at our physical store. Use the details to learn how to use each product, ingredients, and where to find them. No online purchases.</p>
+
+    <aside class="store-info" aria-labelledby="visit-store-title">
+        <h3 id="visit-store-title">Visit Our Store</h3>
+        <p>Our flagship and partner outlets are listed with full mall, floor and address details on the <a href="contact.html">Contact page</a>.</p>
+        <p>Open: Daily 09:00–22:00</p>
+        <p><a href="contact.html">Contact / Directions</a></p>
+    </aside>
+
+        <!-- CSS-only category inputs (hidden) -->
+        <input type="radio" name="cat" id="cat-all" class="cat-input" checked>
+        <input type="radio" name="cat" id="cat-skincare" class="cat-input">
+        <input type="radio" name="cat" id="cat-eye-makeup" class="cat-input">
+        <input type="radio" name="cat" id="cat-lip-products" class="cat-input">
+        <input type="radio" name="cat" id="cat-perfume" class="cat-input">
+        <input type="radio" name="cat" id="cat-hair-care" class="cat-input">
+        <input type="radio" name="cat" id="cat-face-makeup" class="cat-input">
+
     <div class="category-filters" role="tablist" aria-label="Product categories">
-        <button type="button" class="category-button active" data-category="all">All</button>
-        <button type="button" class="category-button" data-category="skincare">Skincare</button>
-        <button type="button" class="category-button" data-category="eye-makeup">Eye Makeup</button>
-        <button type="button" class="category-button" data-category="lip-products">Lip Products</button>
-        <button type="button" class="category-button" data-category="perfume">Perfume</button>
-        <button type="button" class="category-button" data-category="hair-care">Hair Care</button>
-        <button type="button" class="category-button" data-category="face-makeup">Face Makeup</button>
+        <label for="cat-all" class="category-button">All</label>
+        <label for="cat-skincare" class="category-button">Skincare</label>
+        <label for="cat-eye-makeup" class="category-button">Eye Makeup</label>
+        <label for="cat-lip-products" class="category-button">Lip Products</label>
+        <label for="cat-perfume" class="category-button">Perfume</label>
+        <label for="cat-hair-care" class="category-button">Hair Care</label>
+        <label for="cat-face-makeup" class="category-button">Face Makeup</label>
     </div>
 
     <div class="product-grid">
         <article class="product-card" data-category="face-makeup">
-            <a href="images/blush and eyeshadow.jpg" class="lightbox-trigger">
+            <a href="#img-1">
                 <img src="images/blush and eyeshadow.jpg" alt="Blush & Eyeshadow">
             </a>
             <div class="product-info">
                 <h3>Blush & Eyeshadow</h3>
                 <p class="price">$27</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Adds color and dimension to cheeks and eyelids, creating a radiant and sculpted appearance while staying long-lasting.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Iron Oxides, Titanium Dioxide, Mica & Talc.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="face-makeup">
-            <a href="images/blush.jpg" class="lightbox-trigger">
+            <a href="#img-2">
                 <img src="images/blush.jpg" alt="Blush">
             </a>
             <div class="product-info">
                 <h3>Blush</h3>
                 <p class="price">$22</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Provides natural flush and contouring to the face, enhancing cheekbones and creating a youthful glow.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Iron Oxides, Talc, Mica & Magnesium Stearate.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="face-makeup">
-            <a href="images/concealer.jpg" class="lightbox-trigger">
+            <a href="#img-3">
                 <img src="images/concealer.jpg" alt="Concealer">
             </a>
             <div class="product-info">
                 <h3>Concealer</h3>
                 <p class="price">$21</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Hides blemishes, dark circles, and imperfections, creating a smooth and flawless base for makeup application.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Hydrogenated Polydecene, Iron Oxides & Titanium Dioxide.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="skincare">
-            <a href="images/cosmeticproduct (2).jpg" class="lightbox-trigger">
+            <a href="#img-4">
                 <img src="images/cosmeticproduct (2).jpg" alt="Cosmetic Set 1">
             </a>
             <div class="product-info">
                 <h3>Cosmetic Set 1</h3>
                 <p class="price">$50</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Complete skincare collection with essential products for daily routine and comprehensive skin maintenance.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Hyaluronic Acid, Glycerin, Aloe Vera & Botanical Extracts.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="skincare">
-            <a href="images/cosmeticproduct (3).jpg" class="lightbox-trigger">
+            <a href="#img-5">
                 <img src="images/cosmeticproduct (3).jpg" alt="Cosmetic Set 2">
             </a>
             <div class="product-info">
                 <h3>Cosmetic Set 2</h3>
                 <p class="price">$48</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Professional skincare set featuring multiple products for comprehensive skin treatment and daily care.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Retinol, Peptides, Niacinamide & Plant Oils.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="eye-makeup">
-            <a href="images/eyeliner.jpg" class="lightbox-trigger">
+            <a href="#img-6">
                 <img src="images/eyeliner.jpg" alt="Eyeliner">
             </a>
             <div class="product-info">
                 <h3>Eyeliner</h3>
                 <p class="price">$18</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Defines and shapes the eyes, creating bold or subtle lines that enhance eye color and make eyes appear larger.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Carbon Black, Wax & Mineral Oil.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="eye-makeup">
-            <a href="images/eyeshadow.jpg" class="lightbox-trigger">
+            <a href="#img-7">
                 <img src="images/eyeshadow.jpg" alt="Eyeshadow">
             </a>
             <div class="product-info">
                 <h3>Eyeshadow</h3>
                 <p class="price">$29</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Delivers vibrant color to eyelids with smooth, blendable texture that lasts all day without creasing.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Talc, Mica, Iron Oxides & Magnesium Stearate.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="eye-makeup">
-            <a href="images/eyesmakeup.jpg" class="lightbox-trigger">
+            <a href="#img-8">
                 <img src="images/eyesmakeup.jpg" alt="Eye Makeup Set">
             </a>
             <div class="product-info">
                 <h3>Eye Makeup Set</h3>
                 <p class="price">$34</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Complete eye collection with eyeshadow, eyeliner, and mascara for creating stunning eye looks.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Talc, Wax, Titanium Dioxide & Pigments.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="skincare">
-            <a href="images/face mask.jpg" class="lightbox-trigger">
+            <a href="#img-9">
                 <img src="images/face mask.jpg" alt="Face Mask">
             </a>
             <div class="product-info">
                 <h3>Face Mask</h3>
                 <p class="price">$24</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Detoxifies pores, absorbs excess sebum, and revitalizes tired skin for a fresh and clear complexion.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Kaolin Clay, Charcoal Powder, Tea Tree Oil & Zinc Oxide.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="skincare">
-            <a href="images/face-cream.avif" class="lightbox-trigger">
+            <a href="#img-10">
                 <img src="images/face-cream.avif" alt="Face Cream">
             </a>
             <div class="product-info">
                 <h3>Face Cream</h3>
                 <p class="price">$30</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Deeply moisturizes and restores the skin barrier, providing 24-hour hydration for a soft and smooth texture.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Ceramides, Shea Butter, Aloe Vera Extract & Glycerin.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="eye-makeup">
-            <a href="images/lashes.jpg" class="lightbox-trigger">
+            <a href="#img-11">
                 <img src="images/lashes.jpg" alt="False Lashes">
             </a>
             <div class="product-info">
                 <h3>False Lashes</h3>
                 <p class="price">$17</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Instantly adds volume and length to natural lashes, creating dramatic or natural eye looks in seconds.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Synthetic Hair Fibers, Cotton Band & Adhesive.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="lip-products">
-            <a href="images/lipgloss.jpg" class="lightbox-trigger">
+            <a href="#img-12">
                 <img src="images/lipgloss.jpg" alt="Lip Gloss">
             </a>
             <div class="product-info">
                 <h3>Lip Gloss</h3>
                 <p class="price">$19</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Adds shine and moisture to lips, creating a glossy finish that feels smooth and attractive.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Castor Oil, Wax, Titanium Dioxide & Color Pigments.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="lip-products">
-            <a href="images/lipstick (2).jpg" class="lightbox-trigger">
+            <a href="#img-13">
                 <img src="images/lipstick (2).jpg" alt="Lipstick - Rose">
             </a>
             <div class="product-info">
                 <h3>Lipstick — Rose</h3>
                 <p class="price">$20</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Delivers rich, rosy color with moisturizing formula for a beautiful, long-lasting lip color.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Castor Oil, Beeswax, Vitamin E & Rose Extract.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="lip-products">
-            <a href="images/lipstick (3).jpg" class="lightbox-trigger">
+            <a href="#img-14">
                 <img src="images/lipstick (3).jpg" alt="Lipstick - Matte">
             </a>
             <div class="product-info">
                 <h3>Lipstick — Matte</h3>
                 <p class="price">$21</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Creates bold matte finish for dramatic lips with high color payoff and comfortable wear.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Squalane, Silica, Iron Oxides & Mica.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="lip-products">
-            <a href="images/lipstick.jpg" class="lightbox-trigger">
+            <a href="#img-15">
                 <img src="images/lipstick.jpg" alt="Lipstick Classic">
             </a>
             <div class="product-info">
                 <h3>Lipstick Classic</h3>
                 <p class="price">$20</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Timeless lipstick offering smooth color and comfort throughout the day.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Wax, Oils, Titanium Dioxide & Natural Pigments.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="hair-care">
-            <a href="images/lotion.jpg" class="lightbox-trigger">
+            <a href="#img-16">
                 <img src="images/lotion.jpg" alt="Lotion">
             </a>
             <div class="product-info">
                 <h3>Lotion</h3>
                 <p class="price">$26</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Nourishes and hydrates hair, leaving it soft, smooth, and manageable with a healthy shine.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Coconut Oil, Argan Oil, Keratin & Vitamin B5.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="face-makeup">
-            <a href="images/make up brush.jpg" class="lightbox-trigger">
+            <a href="#img-17">
                 <img src="images/make up brush.jpg" alt="Makeup Brush">
             </a>
             <div class="product-info">
                 <h3>Makeup Brush</h3>
                 <p class="price">$15</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Applies makeup evenly and precisely, ensuring professional results and flawless coverage every time.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Natural Hair Bristles, Wooden Handle & Metal Ferrule.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="eye-makeup">
-            <a href="images/mascara.jpg" class="lightbox-trigger">
+            <a href="#img-18">
                 <img src="images/mascara.jpg" alt="Mascara">
             </a>
             <div class="product-info">
                 <h3>Mascara</h3>
                 <p class="price">$25</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Lengthens, volumizes, and defines lashes for bold, dramatic eyes that last all day long.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Iron Oxides, Wax, Resin & Pigments.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="perfume">
-            <a href="images/perfume.jpg" class="lightbox-trigger">
+            <a href="#img-19">
                 <img src="images/perfume.jpg" alt="Perfume">
             </a>
             <div class="product-info">
                 <h3>Perfume</h3>
                 <p class="price">$45</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Long-lasting fragrance with elegant notes that leave a lasting impression throughout the day.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Alcohol, Fragrance Concentrate, Water & Essential Oils.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="skincare">
-            <a href="images/premium_photo-1703343321527-e18ef1c4d8d0.avif" class="lightbox-trigger">
+            <a href="#img-20">
                 <img src="images/premium_photo-1703343321527-e18ef1c4d8d0.avif" alt="Premium Product">
             </a>
             <div class="product-info">
                 <h3>Premium Product</h3>
                 <p class="price">$60</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Advanced formula with premium ingredients for intensive skin treatment and rejuvenation.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Gold Particles, Peptides, Hyaluronic Acid & Antioxidants.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="skincare">
-            <a href="images/serum.jpg" class="lightbox-trigger">
+            <a href="#img-21">
                 <img src="images/serum.jpg" alt="Serum">
             </a>
             <div class="product-info">
                 <h3>Serum</h3>
                 <p class="price">$35</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Hydrates and brightens the skin, leaving a natural, radiant glow while reducing the appearance of fine lines.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Rosehip Oil, Hyaluronic Acid, Vitamin C & Vitamin E.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="skincare">
-            <a href="images/skincare.jpg" class="lightbox-trigger">
+            <a href="#img-22">
                 <img src="images/skincare.jpg" alt="Skincare Set">
             </a>
             <div class="product-info">
                 <h3>Skincare Set</h3>
                 <p class="price">$55</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Comprehensive skincare collection with all essential products for daily facial care routine.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> Glycerin, Niacinamide, Hyaluronic Acid & Plant Extracts.</p>
-                </div>
+                </details>
             </div>
         </article>
 
         <article class="product-card" data-category="skincare">
-            <a href="images/suncream.jpg" class="lightbox-trigger">
+            <a href="#img-23">
                 <img src="images/suncream.jpg" alt="Sun Cream">
             </a>
             <div class="product-info">
                 <h3>Sun Cream</h3>
                 <p class="price">$28</p>
-                <div class="product-details">
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
                     <p class="product-description"><strong>How it works:</strong> Protects skin from harmful UV rays while providing moisturization for daily sun protection.</p>
                     <p class="product-ingredients"><strong>Key Ingredients:</strong> SPF 50 PA+++, Zinc Oxide, Titanium Dioxide & Aloe Vera.</p>
-                </div>
+                </details>
             </div>
         </article>
     </div>
 
     <p class="no-results-message" hidden>No matching products were found.</p>
 
-    <div class="lightbox-overlay" hidden>
-        <button class="lightbox-close" aria-label="Close image">×</button>
-        <img class="lightbox-image" src="" alt="">
+    <!-- CSS-only lightbox overlays -->
+    <div class="lightbox-wrap">
+        <div id="img-1" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/blush and eyeshadow.jpg" alt="Blush & Eyeshadow">
+            <a class="lb-prev" href="#img-23">‹</a>
+            <a class="lb-next" href="#img-2">›</a>
+        </div>
+
+        <div id="img-2" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/blush.jpg" alt="Blush">
+            <a class="lb-prev" href="#img-1">‹</a>
+            <a class="lb-next" href="#img-3">›</a>
+        </div>
+
+        <div id="img-3" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/concealer.jpg" alt="Concealer">
+            <a class="lb-prev" href="#img-2">‹</a>
+            <a class="lb-next" href="#img-4">›</a>
+        </div>
+
+        <div id="img-4" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/cosmeticproduct (2).jpg" alt="Cosmetic Set 1">
+            <a class="lb-prev" href="#img-3">‹</a>
+            <a class="lb-next" href="#img-5">›</a>
+        </div>
+
+        <div id="img-5" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/cosmeticproduct (3).jpg" alt="Cosmetic Set 2">
+            <a class="lb-prev" href="#img-4">‹</a>
+            <a class="lb-next" href="#img-6">›</a>
+        </div>
+
+        <div id="img-6" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/eyeliner.jpg" alt="Eyeliner">
+            <a class="lb-prev" href="#img-5">‹</a>
+            <a class="lb-next" href="#img-7">›</a>
+        </div>
+
+        <div id="img-7" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/eyeshadow.jpg" alt="Eyeshadow">
+            <a class="lb-prev" href="#img-6">‹</a>
+            <a class="lb-next" href="#img-8">›</a>
+        </div>
+
+        <div id="img-8" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/eyesmakeup.jpg" alt="Eye Makeup Set">
+            <a class="lb-prev" href="#img-7">‹</a>
+            <a class="lb-next" href="#img-9">›</a>
+        </div>
+
+        <div id="img-9" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/face mask.jpg" alt="Face Mask">
+            <a class="lb-prev" href="#img-8">‹</a>
+            <a class="lb-next" href="#img-10">›</a>
+        </div>
+
+        <div id="img-10" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/face-cream.avif" alt="Face Cream">
+            <a class="lb-prev" href="#img-9">‹</a>
+            <a class="lb-next" href="#img-11">›</a>
+        </div>
+
+        <div id="img-11" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/lashes.jpg" alt="False Lashes">
+            <a class="lb-prev" href="#img-10">‹</a>
+            <a class="lb-next" href="#img-12">›</a>
+        </div>
+
+        <div id="img-12" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/lipgloss.jpg" alt="Lip Gloss">
+            <a class="lb-prev" href="#img-11">‹</a>
+            <a class="lb-next" href="#img-13">›</a>
+        </div>
+
+        <div id="img-13" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/lipstick (2).jpg" alt="Lipstick - Rose">
+            <a class="lb-prev" href="#img-12">‹</a>
+            <a class="lb-next" href="#img-14">›</a>
+        </div>
+
+        <div id="img-14" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/lipstick (3).jpg" alt="Lipstick - Matte">
+            <a class="lb-prev" href="#img-13">‹</a>
+            <a class="lb-next" href="#img-15">›</a>
+        </div>
+
+        <div id="img-15" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/lipstick.jpg" alt="Lipstick Classic">
+            <a class="lb-prev" href="#img-14">‹</a>
+            <a class="lb-next" href="#img-16">›</a>
+        </div>
+
+        <div id="img-16" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/lotion.jpg" alt="Lotion">
+            <a class="lb-prev" href="#img-15">‹</a>
+            <a class="lb-next" href="#img-17">›</a>
+        </div>
+
+        <div id="img-17" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/make up brush.jpg" alt="Makeup Brush">
+            <a class="lb-prev" href="#img-16">‹</a>
+            <a class="lb-next" href="#img-18">›</a>
+        </div>
+
+        <div id="img-18" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/mascara.jpg" alt="Mascara">
+            <a class="lb-prev" href="#img-17">‹</a>
+            <a class="lb-next" href="#img-19">›</a>
+        </div>
+
+        <div id="img-19" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/perfume.jpg" alt="Perfume">
+            <a class="lb-prev" href="#img-18">‹</a>
+            <a class="lb-next" href="#img-20">›</a>
+        </div>
+
+        <div id="img-20" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/premium_photo-1703343321527-e18ef1c4d8d0.avif" alt="Premium Product">
+            <a class="lb-prev" href="#img-19">‹</a>
+            <a class="lb-next" href="#img-21">›</a>
+        </div>
+
+        <div id="img-21" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/serum.jpg" alt="Serum">
+            <a class="lb-prev" href="#img-20">‹</a>
+            <a class="lb-next" href="#img-22">›</a>
+        </div>
+
+        <div id="img-22" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/skincare.jpg" alt="Skincare Set">
+            <a class="lb-prev" href="#img-21">‹</a>
+            <a class="lb-next" href="#img-23">›</a>
+        </div>
+
+        <div id="img-23" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/suncream.jpg" alt="Sun Cream">
+            <a class="lb-prev" href="#img-22">‹</a>
+            <a class="lb-next" href="#img-1">›</a>
+        </div>
     </div>
 </section>
 
@@ -387,6 +613,6 @@
     </div>
 </footer>
 
-<script src="search.js"></script>
+<!-- JavaScript removed per project requirement (HTML + CSS only) -->
 </body>
 </html>

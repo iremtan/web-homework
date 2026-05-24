@@ -5,6 +5,9 @@ body{
     font-family:'Poppins', Arial, sans-serif;
     background: radial-gradient(circle at top, #fff5f7 0%, #ffe6ef 45%, #fff0f7 100%);
     color:#4b2141;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
 }
 
 header{
@@ -317,11 +320,10 @@ form{
 }
 
 .contact-layout{
-    display:flex;
-    justify-content:center;
+    display:grid;
+    grid-template-columns:1fr;
     align-items:start;
-    gap:40px;
-    flex-wrap:wrap;
+    gap:24px 40px;
     max-width:1140px;
     margin:auto;
 }
@@ -461,6 +463,7 @@ input:focus, textarea:focus{
 @media (min-width: 780px) {
     .contact-layout{
         grid-template-columns:1.4fr 380px;
+        gap:40px;
     }
 }
 
@@ -519,6 +522,9 @@ a:hover{
     color: #d17a9e;
 }
 
+/* Sticky footer helper */
+.site-footer{margin-top:auto}
+
 @media (max-width: 720px) {
     header h1{
         font-size:2.3rem;
@@ -534,3 +540,20 @@ a:hover{
         padding:22px;
     }
 }
+
+/* Store locations styles */
+.store-locations{
+    width:100%;
+    max-width:480px;
+    box-sizing:border-box;
+}
+.store-card{
+    background:linear-gradient(180deg,#fff,#fff8fb);
+    padding:12px 14px;
+    border-radius:12px;
+    margin-top:12px;
+    border:1px solid rgba(235,210,219,0.6);
+}
+.store-card h4{margin:0 0 6px}
+.store-card p{margin:6px 0}
+.store-card a{display:inline-block; margin-top:6px; color:#a34476}

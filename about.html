@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
 
+<!-- Cookie consent banner (CSS-only; no JavaScript) -->
+<input type="checkbox" id="cookie-consent-toggle" class="cookie-consent-toggle" aria-hidden="true">
+<div class="cookie-consent" role="dialog" aria-live="polite">
+    <p>We use analytics to improve the site. Read our <a href="privacy.html">privacy policy</a>.</p>
+    <div class="actions">
+        <label for="cookie-consent-toggle" class="decline">Close</label>
+        <label for="cookie-consent-toggle" class="accept">OK</label>
+    </div>
+</div>
 <header>
     <div class="header-top">
         <div class="search-area">
@@ -66,6 +78,6 @@
     </div>
 </footer>
 
-<script src="search.js"></script>
+<!-- JavaScript removed per project requirement (HTML + CSS only) -->
 </body>
 </html>
