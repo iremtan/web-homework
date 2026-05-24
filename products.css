@@ -272,6 +272,9 @@ p{
     margin:0 auto;
     transition: transform .3s ease, opacity .3s ease, box-shadow .3s ease, max-height .3s ease;
     max-height:1000px;
+    display:flex;
+    flex-direction:column;
+    min-height:520px;
 }
 
 /* category pill using data-category attribute */
@@ -314,6 +317,18 @@ p{
     transition: transform .3s ease;
 }
 
+.product-info{
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    flex:1 1 auto;
+}
+
+@media (max-width: 520px){
+    .product-card{min-height:auto}
+}
+
 .product-card:hover img{
     transform: scale(1.02);
 }
@@ -339,6 +354,13 @@ p{
     border-radius: 18px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
 }
+
+/* Testimonials */
+.testimonials{padding:30px 20px;background:linear-gradient(180deg,#fff,#fff8fb);}
+.testimonial-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:980px;margin:18px auto}
+.testimonial-card{background:#fff;padding:16px;border-radius:12px;border:1px solid rgba(212,143,171,0.35);box-shadow:0 12px 26px rgba(171,68,123,0.06)}
+.testimonial-card p{margin:0 0 10px;color:#5a2f48}
+.testimonial-card footer{font-weight:700;color:#8b3560;font-size:0.95rem}
 
 .lightbox-close{
     position: absolute;
