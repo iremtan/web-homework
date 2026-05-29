@@ -14,12 +14,6 @@
 
 <header>
     <div class="header-top">
-        <div class="search-area">
-            <form class="search-form" action="products.html" method="get">
-                <input type="search" name="q" placeholder="Search products..." aria-label="Search products">
-                <button type="submit">Search</button>
-            </form>
-        </div>
         <h1>Our Products</h1>
     </div>
 
@@ -401,6 +395,38 @@
             </div>
         </article>
 
+        <article class="product-card" data-category="hair-care">
+            <a href="#img-16">
+                <img src="images/hairmask.jpg" alt="Hair Mask">
+            </a>
+            <div class="product-info">
+                <h3>Hair Mask</h3>
+                <p class="price">$30</p>
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
+                    <p class="product-description"><strong>How it works:</strong> Intensive deep conditioning treatment that repairs damaged hair, restores moisture balance, and strengthens hair strands from root to tip.</p>
+                    <p class="product-ingredients"><strong>Key Ingredients:</strong> Shea Butter, Biotin, Avocado Oil & Silk Proteins.</p>
+                </details>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="hair-care">
+            <a href="#img-24">
+                <img src="images/hairserum.jpg" alt="Hair Serum">
+            </a>
+            <div class="product-info">
+                <h3>Hair Serum</h3>
+                <p class="price">$28</p>
+                <span class="in-store-badge">In‑store only</span>
+                <details class="product-details">
+                    <summary>Product details</summary>
+                    <p class="product-description"><strong>How it works:</strong> Smoothes frizz, protects hair from heat and environmental damage, and adds a glossy finish without weighing hair down.</p>
+                    <p class="product-ingredients"><strong>Key Ingredients:</strong> Argan Oil, Vitamin E, Silk Amino Acids & Coconut Extract.</p>
+                </details>
+            </div>
+        </article>
+
         <article class="product-card" data-category="skincare">
             <a href="#img-22">
                 <img src="images/skincare.jpg" alt="Skincare Set">
@@ -441,15 +467,15 @@
         <div class="testimonial-grid">
             <blockquote class="testimonial-card">
                 <p>"Love the mascara — gives volume without clumps. Store staff were very helpful."</p>
-                <footer>— Ayşe K., Istanbul</footer>
+                <footer>— Ashly A.</footer>
             </blockquote>
             <blockquote class="testimonial-card">
                 <p>"Great selection and the sample sizes let me try before buying. Friendly team."</p>
-                <footer>— Mehmet T., Ankara</footer>
+                <footer>— John D.</footer>
             </blockquote>
             <blockquote class="testimonial-card">
                 <p>"Natural glow products actually work. My skin looks smoother after two weeks."</p>
-                <footer>— Elif S., Izmir</footer>
+                <footer>— Emily R.</footer>
             </blockquote>
         </div>
     </section>
@@ -614,6 +640,13 @@
             <a class="lb-close" href="#"></a>
             <img src="images/suncream.jpg" alt="Sun Cream">
             <a class="lb-prev" href="#img-22">‹</a>
+            <a class="lb-next" href="#img-24">›</a>
+        </div>
+
+        <div id="img-24" class="lightbox">
+            <a class="lb-close" href="#"></a>
+            <img src="images/hairserum.jpg" alt="Hair Serum">
+            <a class="lb-prev" href="#img-23">‹</a>
             <a class="lb-next" href="#img-1">›</a>
         </div>
     </div>
