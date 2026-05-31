@@ -245,6 +245,140 @@ p{
     box-shadow:0 18px 40px rgba(114, 50, 88, 0.18);
 }
 
+.beauty-video-section{
+    background: linear-gradient(135deg, rgba(255, 228, 237, 0.5) 0%, rgba(255, 240, 247, 0.8) 100%);
+    padding:50px 20px;
+}
+
+.beauty-video-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:30px;
+    max-width:1400px;
+    margin:auto;
+    align-items:center;
+}
+
+.video-content{
+    grid-column:2;
+    grid-row:1;
+}
+
+.beauty-info-left{
+    grid-column:1;
+    grid-row:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.beauty-info-right{
+    grid-column:3;
+    grid-row:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.beauty-text-box{
+    background:rgba(255, 255, 255, 0.95);
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 12px 35px rgba(171, 68, 123, 0.12);
+    border-left:6px solid #ff8fc3;
+    transition:all 0.3s ease;
+}
+
+.beauty-text-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 45px rgba(171, 68, 123, 0.18);
+}
+
+.beauty-cta-box{
+    border-left-color:#ffc4df;
+    background:rgba(255, 240, 247, 0.98);
+}
+
+.beauty-subheading{
+    font-size:1.5rem;
+    color:#8b3560;
+    margin:0 0 15px 0;
+    font-weight:700;
+    font-family:'Poppins', Arial, sans-serif;
+}
+
+.beauty-description{
+    color:#4b2141;
+    font-size:0.98rem;
+    line-height:1.6;
+    margin:0 0 20px 0;
+    font-weight:400;
+}
+
+.beauty-features{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.beauty-features li{
+    color:#d4357a;
+    font-weight:600;
+    margin-bottom:12px;
+    font-size:0.95rem;
+    letter-spacing:0.01em;
+}
+
+.beauty-highlight{
+    background:linear-gradient(135deg, #ff8fc3 0%, #ffc4df 100%);
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+.beauty-highlight p{
+    color:#ffffff;
+    margin:0;
+    font-weight:700;
+    font-size:1.05rem;
+    text-align:center;
+    letter-spacing:0.05em;
+}
+
+@media (max-width:1024px){
+    .beauty-video-wrapper{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+    
+    .video-content{
+        grid-column:1;
+    }
+    
+    .beauty-info-left,
+    .beauty-info-right{
+        grid-column:1;
+    }
+}
+
+@media (max-width:768px){
+    .beauty-video-section{
+        padding:40px 15px;
+    }
+    
+    .beauty-text-box{
+        padding:20px;
+    }
+    
+    .beauty-subheading{
+        font-size:1.3rem;
+    }
+    
+    .beauty-description{
+        font-size:0.92rem;
+    }
+}
+
 table{
     width:90%;
     max-width:780px;
