@@ -466,12 +466,11 @@ a:hover{
 .cookie-consent .decline{background:transparent; border:1px solid rgba(75,33,65,0.12); color:#4b2141}
 .cookie-consent-toggle:checked + .cookie-consent{display:none}
 
-/* Hidden honeypot for forms */
+/* Hidden honeypot field for spam prevention */
 .hidden-hp{position:absolute !important; left:-9999px !important; top:auto !important; width:1px !important; height:1px !important; overflow:hidden}
 
 .form-error{color:#b0003a; font-size:0.95rem; margin-top:8px}
 
-/* Print styles: simplify layout for paper/PDF export */
 @media print{
     body{background:#fff;color:#000}
     header, .site-footer, .cookie-consent, .social-links, nav{display:none !important}
