@@ -22,23 +22,3 @@ Quick TTS options:
 
 After placing real MP3 files with the same names, the audio players on the About page will play them automatically when the user clicks play.
 
-Generate MP3 files locally using Python (optional)
------------------------------------------------
-If you'd like the assistant to synthesize English MP3 intros automatically on your machine, run the included script.
-
-1. Ensure Python 3.8+ is installed.
-2. Create and activate a virtual environment, then install dependencies:
-
-```powershell
-python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-3. Run the generator script from the repository root:
-
-```powershell
-python scripts/generate_team_tts.py
-```
-
-This will read `*.txt` transcripts in the `audio/` folder and write corresponding `*-intro.mp3` files (English, via Google TTS). The script requires internet access.

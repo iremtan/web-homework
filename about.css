@@ -84,6 +84,69 @@ section{
     text-align:center;
 }
 
+.team {
+    padding: 40px 20px;
+}
+
+.team-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background: rgba(255,255,255,0.94);
+    border: 1px solid rgba(255, 156, 193, 0.35);
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(128, 58, 105, 0.12);
+    padding: 24px;
+    text-align: left;
+}
+
+.team-photo {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 18px;
+}
+
+.team-card h4 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.team-card p {
+    color: #5a2f48;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.team-card audio {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.transcript details {
+    background: rgba(255, 196, 223, 0.22);
+    border-radius: 14px;
+    padding: 12px 14px;
+}
+
+.transcript summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #8b3560;
+    margin-bottom: 8px;
+}
+
+.transcript p {
+    margin: 0;
+    color: #5a2f48;
+}
+
 h2{
     font-size:2rem;
     margin-bottom:12px;
